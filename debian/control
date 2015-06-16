@@ -1,0 +1,35 @@
+Source: msgpack
+Section: libs
+Priority: extra
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+XSBC-Original-Maintainer: Taku YASUI <tach@debian.org>
+Build-Depends: cdbs, debhelper (>= 7.0.50~), dh-autoreconf, quilt
+Standards-Version: 3.9.4
+Homepage: http://msgpack.org/
+Vcs-Git: git://anonscm.debian.org/collab-maint/msgpack.git
+Vcs-Browser: http://anonscm.debian.org/gitweb/?p=collab-maint/msgpack.git
+
+Package: libmsgpack3
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}
+Description: binary-based efficient object serialization library
+ MessagePack is a binary-based efficient object serialization library.
+ It enables to exchange structured objects between many languages like JSON.
+ But unlike JSON, it is very fast and small.
+
+Package: libmsgpackc2
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}
+Description: binary-based efficient object serialization library
+ MessagePack is a binary-based efficient object serialization library.
+ It enables to exchange structured objects between many languages like JSON.
+ But unlike JSON, it is very fast and small.
+
+Package: libmsgpack-dev
+Section: libdevel
+Architecture: any
+Depends: libmsgpack3 (= ${binary:Version}), libmsgpackc2 (= ${binary:Version}), ${misc:Depends}
+Description: binary-based efficient object serialization library
+ MessagePack is a binary-based efficient object serialization library.
+ It enables to exchange structured objects between many languages like JSON.
+ But unlike JSON, it is very fast and small.

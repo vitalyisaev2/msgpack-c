@@ -1,0 +1,50 @@
+msgpack (0.5.7-3ubuntu1) trusty; urgency=medium
+
+  * Use dh-autoreconf instead of autotools-dev to also fix FTBFS on ppc64el by
+    getting new libtool macros (still updates config.{sub,guess}).
+
+ -- Logan Rosen <logan@ubuntu.com>  Sat, 04 Jan 2014 22:33:27 -0500
+
+msgpack (0.5.7-3) unstable; urgency=low
+
+  * Migration from Subversion to Git
+  * Bump Standards-Version to 3.9.4.
+
+ -- Taku YASUI <tach@debian.org>  Fri, 16 Aug 2013 18:13:02 +0900
+
+msgpack (0.5.7-2) unstable; urgency=low
+
+  * Fix big-endian problem
+    - Add patch 20_fix_bigendian
+      https://github.com/msgpack/msgpack/commit/b8aa93ce30d11d091b339bff0e10ddf3a8d08daf
+
+ -- Taku YASUI <tach@debian.org>  Mon, 16 Apr 2012 03:23:53 +0900
+
+msgpack (0.5.7-1) unstable; urgency=low
+
+  * New upstream release
+  * Remove needless README.source
+  * Move repository to svn.debian.org
+    - Vcs-Svn: svn://svn.debian.org/svn/collab-maint/deb-maint/msgpack
+  * Bump Standards-Version to 3.9.3
+
+ -- Taku YASUI <tach@debian.org>  Sat, 31 Mar 2012 05:53:02 +0900
+
+msgpack (0.5.4-2) unstable; urgency=low
+
+  * Remove *.la file from libmsgpack-dev (closes: #622438)
+  * Change Standard-Version to 3.9.2
+
+ -- Taku YASUI <tach@debian.org>  Sat, 18 Jun 2011 12:31:24 +0900
+
+msgpack (0.5.4-1) unstable; urgency=low
+
+  * New upstream release
+
+ -- Taku YASUI <tach@debian.org>  Fri, 10 Sep 2010 23:49:13 +0900
+
+msgpack (0.5.1-1) unstable; urgency=low
+
+  * Initial release (closes: #588387)
+
+ -- Taku YASUI <tach@debian.org>  Mon, 12 Jul 2010 02:27:55 +0900
