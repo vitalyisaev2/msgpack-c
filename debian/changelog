@@ -1,31 +1,3 @@
-msgpack (1.1.0~git20150617-1) utopic; urgency=medium
-
-  * Запуск bootstrap скрипта
-  * Поиски правильной конфигурации для сборки
-  * Change format
-  * Нужно собрать gtest
-  * Сборка gtest в bootstrap скрипте
-  * Правильный запуск сборки libmsgpack
-  * New builddepends
-  * Implicit call for bootstrap?
-  * Changes in *install files
-  * Searching for good *install pattern
-  * Back to legacy debian/rules
-  * Noticed cmake usage
-  * Broken docs
-  * avoid C library
-  * Primitive
-  * No symbols
-  * Trying to build dbg package
-  * Trying to compile with gtest
-  * Build Gtest in distinct script - sorry, don't know CMAKE
-  * Build Gtest in distinct script
-  * CMake fix
-  * GTEST discovery
-  * Let's just not use GTest
-
- -- Vitaly Isaev <autobuilder@corp.sputnik.ru>  Wed, 17 Jun 2015 19:16:10 +0300
-
 msgpack (0.5.7-3ubuntu1) trusty; urgency=medium
 
   * Use dh-autoreconf instead of autotools-dev to also fix FTBFS on ppc64el by
