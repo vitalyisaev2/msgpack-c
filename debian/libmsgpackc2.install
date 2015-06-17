@@ -1,1 +1,1 @@
-usr/lib/libmsgpackc.so.*
+usr/lib/${DEB_HOST_MULTIARCH}/libmsgpackc.so.*
