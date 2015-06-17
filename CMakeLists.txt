@@ -47,10 +47,10 @@ ENDIF ()
 
 # Very dirty hack
 FIND_PACKAGE (GTest)
-IF (NOT GTEST_FOUND AND EXISTS /usr/lib/gtest)
-    MESSAGE ("gtest libs not found; trying to compile it...")
+IF (NOT GTEST_FOUND AND EXISTS /usr/src/gtest)
+    MESSAGE ("GTEST libs not found; trying to compile it...")
     EXECUTE_PROCESS(
-      COMMAND cd /usr/src/gtest && sudo cmake . && sudo make && sudo mv libg* /usr/lib/ && cd -
+      COMMAND ./build_gtest.sh
       OUTPUT_VARIABLE gtest_install)
     MESSAGE (${gtest_install})
 ENDIF
