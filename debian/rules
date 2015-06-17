@@ -6,14 +6,7 @@
 # include /usr/share/cdbs/1/rules/autoreconf.mk
 
 %:
-	# build gtest (libs are not distributed)
-	cd /usr/src/gtest
-	sudo cmake .
-	sudo make
-	sudo mv libg* /usr/lib/
 	
 	# build project
-	PROJECT_DIR := $(shell cwd)
-	cd ${PROJECT_DIR}
 	./bootstrap
 	dh $@

@@ -39,6 +39,9 @@ test -f NEWS      || touch NEWS
 test -f NOTICE    || touch NOTICE
 test -f README    || cp -f README.md README
 
+# This library requires gtest static libs to be built, but they're no longer distributed
+BUILD_GTEST_LIB="cd /usr/src/gtest && sudo cmake . && sudo make && sudo mv libg* /usr/lib/ && cd -"
+
 ACLOCAL="aclocal"
 ACLOCAL_FILES="aclocal.m4"
 ALWAYS_CLEAN="config.status config.log config.cache libtool"
@@ -111,11 +114,10 @@ if test x"$1" = x"--clean"; then
 		$RM $cf
 	done
 else
+    $BUILD_GTEST_LIB
 	$LIBTOOLIZE
 	$ACLOCAL
 	$AUTOHEADER
 	$AUTOMAKE
 	$AUTOCONF
 fi
-
-
