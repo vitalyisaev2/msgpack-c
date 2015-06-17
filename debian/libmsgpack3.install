@@ -1,2 +1,2 @@
 #!/usr/bin/dh_exec
-usr/lib/*/libmsgpack.so.*
+usr/lib/*/libmsgpack.so.4.0.0
