@@ -45,15 +45,6 @@ IF (MSGPACK_BOOST)
    SET (CMAKE_CXX_FLAGS "-DMSGPACK_USE_BOOST ${CMAKE_CXX_FLAGS}")
 ENDIF ()
 
-# Very dirty hack
-FIND_PACKAGE (GTest)
-IF (NOT GTEST_FOUND AND EXISTS /usr/src/gtest)
-    MESSAGE("GTEST libs not found; trying to compile it...")
-    EXECUTE_PROCESS(
-      COMMAND ./build_gtest.sh OUTPUT_VARIABLE gtest_install)
-    MESSAGE("${gtest_install}")
-ENDIF ()
-
 
 # Build with tests
 FIND_PACKAGE (GTest)
