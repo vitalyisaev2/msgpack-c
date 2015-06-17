@@ -114,10 +114,10 @@ if test x"$1" = x"--clean"; then
 		$RM $cf
 	done
 else
-    $BUILD_GTEST_LIB
 	$LIBTOOLIZE
 	$ACLOCAL
 	$AUTOHEADER
 	$AUTOMAKE
 	$AUTOCONF
+    eval $BUILD_GTEST_LIB
 fi
