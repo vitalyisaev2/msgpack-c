@@ -7,8 +7,8 @@ Build-Depends: cdbs, debhelper, dh-autoreconf, quilt,
     libgtest-dev, zlib1g-dev
 Standards-Version: 3.9.5
 Homepage: http://msgpack.org/
-Vcs-Git: git://anonscm.debian.org/collab-maint/msgpack.git
-Vcs-Browser: http://anonscm.debian.org/gitweb/?p=collab-maint/msgpack.git
+Vcs-Git: git://github.com/vitalyisaev2/msgpack-c.git
+Vcs-Browser: https://github.com/vitalyisaev2/msgpack-c.git
 
 Package: libmsgpack3
 Architecture: any
@@ -30,8 +30,19 @@ Description: binary-based efficient object serialization library
 Package: libmsgpack-dev
 Section: libdevel
 Architecture: any
-Depends: libmsgpack3 (= ${binary:Version}), libmsgpackc2 (= ${binary:Version}), ${misc:Depends}
+Depends: libmsgpack3 (= ${binary:Version}), ${misc:Depends}
 Description: binary-based efficient object serialization library
+ MessagePack is a binary-based efficient object serialization library.
+ It enables to exchange structured objects between many languages like JSON.
+ But unlike JSON, it is very fast and small.
+
+Package: libmsgpack3-dbg
+Priority: extra
+Section: debug
+Architecture: any
+Depends: libmsgpack3 (= ${binary:Version}), ${misc:Depends}
+Multi-Arch: same
+Description: binary-based efficient object serialization library debuginfo
  MessagePack is a binary-based efficient object serialization library.
  It enables to exchange structured objects between many languages like JSON.
  But unlike JSON, it is very fast and small.

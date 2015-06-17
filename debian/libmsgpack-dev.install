@@ -1,2 +1,5 @@
-usr/lib
+#!/usr/bin/dh_exec
+usr/lib/*/*.a
+usr/lib/*/libmsgpack.so
+usr/lib/*/libmsgpack.so.3
 usr/include

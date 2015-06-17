@@ -1,1 +1,2 @@
-usr/lib
+#!/usr/bin/dh_exec
+usr/lib/*/libmsgpack.so.*
