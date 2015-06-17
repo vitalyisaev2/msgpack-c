@@ -1,10 +1,10 @@
 Source: msgpack
 Section: libs
 Priority: extra
-Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Maintainer: Vitaly Isaev <vitalyisaev2@gmail.com>
 XSBC-Original-Maintainer: Taku YASUI <tach@debian.org>
-Build-Depends: cdbs, debhelper (>= 7.0.50~), dh-autoreconf, quilt
-Standards-Version: 3.9.4
+Build-Depends: cdbs, debhelper (>= 7.0.50~), dh-autoreconf, quilt, libgtest-dev
+Standards-Version: 3.9.5
 Homepage: http://msgpack.org/
 Vcs-Git: git://anonscm.debian.org/collab-maint/msgpack.git
 Vcs-Browser: http://anonscm.debian.org/gitweb/?p=collab-maint/msgpack.git
