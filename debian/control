@@ -10,7 +10,7 @@ Homepage: http://msgpack.org/
 Vcs-Git: git://github.com/vitalyisaev2/msgpack-c.git
 Vcs-Browser: https://github.com/vitalyisaev2/msgpack-c.git
 
-Package: libmsgpack3
+Package: libmsgpack4
 Architecture: any
 Depends: ${shlibs:Depends}, ${misc:Depends}
 Description: binary-based efficient object serialization library
@@ -27,20 +27,20 @@ Description: binary-based efficient object serialization library
 #  But unlike JSON, it is very fast and small.
 # 
 
-Package: libmsgpack-dev
+Package: libmsgpack4-dev
 Section: libdevel
 Architecture: any
-Depends: libmsgpack3 (= ${binary:Version}), ${misc:Depends}
+Depends: libmsgpack4 (= ${binary:Version}), ${misc:Depends}
 Description: binary-based efficient object serialization library
  MessagePack is a binary-based efficient object serialization library.
  It enables to exchange structured objects between many languages like JSON.
  But unlike JSON, it is very fast and small.
 
-Package: libmsgpack3-dbg
+Package: libmsgpack4-dbg
 Priority: extra
 Section: debug
 Architecture: any
-Depends: libmsgpack3 (= ${binary:Version}), ${misc:Depends}
+Depends: libmsgpack4 (= ${binary:Version}), ${misc:Depends}
 Multi-Arch: same
 Description: binary-based efficient object serialization library debuginfo
  MessagePack is a binary-based efficient object serialization library.
