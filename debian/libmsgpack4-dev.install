@@ -1,5 +1,5 @@
 #!/usr/bin/dh_exec
-usr/lib/*/libmsgpack.a usr/lib/libmsgpack4.a
+usr/lib/*/*.a 
 usr/lib/*/libmsgpack.so
 usr/lib/*/libmsgpack.so.4
-usr/include/msgpack usr/include/msgpack4
+usr/include/msgpack/*.h usr/include/msgpack4
