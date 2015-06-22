@@ -1,3 +1,9 @@
+msgpack (1.1.0~git20150618-1) utopic; urgency=medium
+
+  * Change soversion to 4, cause binary compatibility is lost
+
+ -- Vitaly Isaev <autobuilder@corp.sputnik.ru>  Thu, 18 Jun 2015 18:42:41 +0300
+
 msgpack (1.1.0~git20150617-1) utopic; urgency=medium
 
   * UNRELEASED
