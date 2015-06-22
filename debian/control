@@ -41,7 +41,6 @@ Priority: extra
 Section: debug
 Architecture: any
 Depends: libmsgpack4 (= ${binary:Version}), ${misc:Depends}
-Multi-Arch: same
 Description: binary-based efficient object serialization library debuginfo
  MessagePack is a binary-based efficient object serialization library.
  It enables to exchange structured objects between many languages like JSON.
