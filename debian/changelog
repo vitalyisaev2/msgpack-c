@@ -1,3 +1,17 @@
+msgpack (1.1.0~git20150622-1) utopic; urgency=medium
+
+  [ Vitaly Isaev ]
+  * Попытка разрулить мультиверсионность msgpack на уровне debian
+
+  [ Autobuilder ]
+  * Marking static lib with so version number
+  * Fixed lintian warning
+  * Installing headers to custom path
+
+  [ Vitaly Isaev ]
+
+ -- Vitaly Isaev <autobuilder@corp.sputnik.ru>  Mon, 22 Jun 2015 19:37:44 +0300
+
 msgpack (1.1.0~git20150618-1) utopic; urgency=medium
 
   * Change soversion to 4, cause binary compatibility is lost
